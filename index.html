@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="keywords" content="тануки, японский ресторан, суши, рамен, доставка, Алматы, японская кухня" />
+  <meta name="description" content="Ресторан Тануки — традиционная японская кухня в центре города. Суши, роллы, рамен и авторские десерты." />
+  <title>Тануки — японский ресторан</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&family=Joti+One&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner container">
+      <a href="#hero" class="header__logo">Тануки<span class="header__logo-mark">狸</span></a>
+
+      <nav class="nav" aria-label="Главное меню">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#hero">Главная</a></li>
+          <li class="nav__item"><a class="nav__link" href="#about">О нас</a></li>
+          <li class="nav__item"><a class="nav__link" href="#menu">Меню</a></li>
+          <li class="nav__item"><a class="nav__link" href="#price">Прайс</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a class="header__book btn" href="#booking">Забронировать</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <!-- HERO (parallax bg) -->
+    <section id="hero" class="hero" role="region" aria-label="Главный экран">
+      <div class="hero__overlay">
+        <div class="hero__content container">
+          <h1 class="hero__title">Добро пожаловать в «Тануки»</h1>
+          <p class="hero__subtitle">Традиционная японская кухня в центре города</p>
+          <a href="#menu" class="btn hero__btn">Посмотреть меню</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about container" role="region" aria-label="О нас">
+      <div class="about__media">
+        <img src="img/chef.jpg" alt="Шеф-повар с суши" class="about__img">
+      </div>
+      <div class="about__content">
+        <h2 class="about__title">О нас</h2>
+        <p class="about__text">
+          Ресторан «Тануки» — это место, где японские традиции встречаются с современным вкусом.
+          Мы готовим только из свежих ингредиентов от проверенных поставщиков.
+          Наш шеф-повар более 15 лет изучает японскую кухню, чтобы каждая тарелка радовала гостей балансом вкуса и эстетики.
+        </p>
+      </div>
+    </section>
+
+    <!-- MENU (cards) -->
+    <section id="menu" class="menu" role="region" aria-label="Меню">
+      <div class="container">
+        <h2 class="section-title">Наше меню</h2>
+
+        <div class="menu__grid">
+          <!-- card BEM -->
+          <article class="menu__card card">
+            <img src="img/sushi1.jpg" alt="Суши Лосось" class="card__img">
+            <div class="card__body">
+              <h3 class="card__title">Суши «Лосось»</h3>
+              <p class="card__desc">Классическое суши с филе лосося</p>
+              <span class="card__price">500 ₸</span>
+            </div>
+          </article>
+
+          <article class="menu__card card">
+            <img src="img/roll.jpg" alt="Ролл Филадельфия" class="card__img">
+            <div class="card__body">
+              <h3 class="card__title">Ролл «Филадельфия»</h3>
+              <p class="card__desc">Лосось, крем-сыр, огурец, нори, рис</p>
+              <span class="card__price">1600 ₸</span>
+            </div>
+          </article>
+
+          <article class="menu__card card">
+            <img src="img/ramen.jpg" alt="Рамен" class="card__img">
+            <div class="card__body">
+              <h3 class="card__title">Рамен классический</h3>
+              <p class="card__desc">Японский суп-лапша с курицей</p>
+              <span class="card__price">2000 ₸</span>
+            </div>
+          </article>
+
+          <article class="menu__card card">
+            <img src="img/tempura.jpg" alt="Темпура креветки" class="card__img">
+            <div class="card__body">
+              <h3 class="card__title">Темпура креветки</h3>
+              <p class="card__desc">Жареные в кляре тигровые креветки</p>
+              <span class="card__price">2200 ₸</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICE (table as required) -->
+    <section id="price" class="price container" role="region" aria-label="Прайс-лист">
+      <h2 class="section-title">Прайс</h2>
+
+      <div class="price__wrap">
+        <table class="price__table" summary="Прайс-лист блюд ресторана Тануки">
+          <thead>
+            <tr class="price__head">
+              <th>Блюдо</th>
+              <th>Описание</th>
+              <th>Цена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ролл «Филадельфия»</td>
+              <td>Лосось, крем-сыр, огурец, нори, рис</td>
+              <td class="price__amount">1900 ₸</td>
+            </tr>
+            <tr>
+              <td>Ролл «Калифорния»</td>
+              <td>Краб, авокадо, огурец, икра тобико</td>
+              <td class="price__amount">2000 ₸</td>
+            </tr>
+            <tr>
+              <td>Суши «Лосось»</td>
+              <td>Классическое суши с филе лосося</td>
+              <td class="price__amount">2200 ₸</td>
+            </tr>
+            <tr>
+              <td>Суши «Угорь»</td>
+              <td>Суши с копчёным угрём и соусом унаги</td>
+              <td class="price__amount">2500 ₸</td>
+            </tr>
+            <tr>
+              <td>Рамен классический</td>
+              <td>японский суп-лапша с курицей</td>
+              <td class="price__amount">2700 ₸</td>
+            </tr>
+            <tr>
+              <td>Рамен Говяжий</td>
+              <td> суп-лапша с говядиной и яйцом</td>
+              <td class="price__amount">3500 ₸</td>
+            </tr>
+            <tr>
+              <td>Темпура креветки</td>
+              <td>Жареные в кляре тигровые креветки</td>
+              <td class="price__amount">1900 ₸</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="booking" class="booking container" role="region" aria-label="Бронирование">
+      <h2 class="section-title">Забронировать столик</h2>
+      <form class="booking__form" action="#" method="post" novalidate>
+        <label class="booking__row">
+          <span class="booking__label">Имя</span>
+          <input class="booking__input" type="text" name="name" required>
+        </label>
+        <label class="booking__row">
+          <span class="booking__label">Телефон или email</span>
+          <input class="booking__input" type="tel" name="phone" required>
+        </label>
+        <label class="booking__row">
+          <span class="booking__label">Дата и время</span>
+          <input class="booking__input" type="datetime-local" name="datetime" required>
+        </label>
+        <label class="booking__row">
+          <span class="booking__label">Кол-во гостей</span>
+          <input class="booking__input" type="number" min="1" max="20" name="guests" required>
+        </label>
+        <button class="btn booking__btn" type="submit">Забронировать</button>
+      </form>
+    </section>
+
+    <!-- CONTACTS -->
+    <section id="contacts" class="contacts" role="region" aria-label="Контакты">
+      <div class="contacts__map">
+        <!-- замените src на ваш embed-код Google Maps, здесь заглушка -->
+        <img src="img/map.png" alt="Карта расположения ресторана" class="contacts__mapimg">
+      </div>
+
+      <div class="contacts__info">
+        <h3 class="contacts__title">Контакты</h3>
+        <p class="contacts__text">📍 г. Алматы, ул. Абая, 77</p>
+        <p class="contacts__text">📞 +7 (777) 123-45-67</p>
+        <p class="contacts__text">⏰ 11:00 – 23:00</p>
+        <div class="contacts__socials">
+          <a href="#" class="contacts__social">TikTok @tanukifamily</a>
+          <a href="#" class="contacts__social">Instagram tanukifamily.kz</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">© 2025 Ресторан «Тануки»</div>
+      <nav class="footer__nav" aria-label="Подвал меню">
+        <a href="#hero" class="footer__link">Главная</a>
+        <a href="#menu" class="footer__link">Меню</a>
+        <a href="#contacts" class="footer__link">Контакты</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // JS: плавный скролл с учётом фиксированного header (header height)
+    (function(){
+      const header = document.querySelector('.header');
+      const links = document.querySelectorAll('a[href^="#"]');
+
+      function getHeaderHeight(){
+        return header ? header.offsetHeight + 10 : 10;
+      }
+
+      links.forEach(link => {
+        link.addEventListener('click', function(e){
+          const targetId = this.getAttribute('href');
+          if(!targetId.startsWith('#') || targetId === '#') return;
+          const targetEl = document.querySelector(targetId);
+          if(!targetEl) return;
+          e.preventDefault();
+          const y = targetEl.getBoundingClientRect().top + window.pageYOffset - getHeaderHeight();
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        });
+      });
+
+      // simple parallax tweak for hero on scroll (small effect)
+      const hero = document.querySelector('.hero');
+      if(hero){
+        window.addEventListener('scroll', () => {
+          const scrolled = window.pageYOffset;
+          hero.style.backgroundPosition = `center ${Math.max(-50, -scrolled * 0.15)}px`;
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
